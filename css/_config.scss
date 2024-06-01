@@ -1,0 +1,41 @@
+// Color styles
+
+$primary_color:     #862217;
+$text_color:        #1E1E24;
+$background_dark:   #1E1E24;
+$background_light:  #FEF8F1;
+$black:             #000;
+$white:             #fff;
+
+
+// Text styles
+
+@mixin title1() {
+
+}
+
+@mixin title2() {
+
+}
+
+@mixin title3() {
+    font-size: 32px;
+    color: $primary_color;
+}
+
+// Mixins
+
+@mixin button_outline() {
+    border: 1px solid $white;
+    background: none;
+    color: white;
+    text-transform: lowercase;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background: $white;
+        color: $text_color;
+    }
+}

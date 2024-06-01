@@ -1,0 +1,167 @@
+@import 'config';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: $background_light;
+}
+
+nav {
+    background-color: $background_light;
+    padding: 50px 60px;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 700;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            display: inline;
+            margin: 0 20px;
+
+            a {
+                text-decoration: none;
+                color: $black;
+            }
+        }
+    }
+}
+
+header {
+    background-color: $background_light;
+    padding: 30px 60px 135px;
+    text-align: center;
+
+    .intro {
+        display: flex;
+        flex-flow: column;
+        gap: 25px;
+
+        h1 {
+            font-size: 24px;
+            font-style: italic;
+        }
+
+        h2 {
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+#content {
+
+    img {
+        width: 100%;
+    }
+    
+    h3 {
+        @include title3();  
+        font-weight: 400;
+    }
+
+    .inner {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #about {
+        background: $background_dark;
+        color: $white;
+        padding: 270px 20px;
+
+        #about_inner {
+            display: flex;
+            justify-content: space-between;
+
+            > p {
+                width: 65%;
+                font-size: 48px;
+            }
+
+            .text_right {
+                display: flex;
+                flex-flow: column;
+                align-items: flex-start;
+                gap: 75px;
+                max-width: 30%;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        button {
+            @include button_outline();
+        }
+    }
+
+    #projects {
+        padding: 40px 20px;
+
+        .project-list {
+            .project {
+                margin-bottom: 20px;
+
+                h4 {
+                    font-size: 24px;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    #gallery {
+        text-align: center;
+
+        button {
+            font-size: 24px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .image-gallery {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: #e0e0e0;
+            }
+        }
+    }
+}
+
+footer {
+    background: $background_dark;
+    color: $white;
+    text-align: center;
+    padding: 20px;
+
+    .contact-info {
+        margin-top: 10px;
+
+        a {
+            color: $white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    }
+}

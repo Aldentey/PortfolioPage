@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: #FEF8F1;
+}
+
+nav {
+  background-color: #FEF8F1;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 700;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+header {
+  background-color: #FEF8F1;
+  padding: 30px 60px 135px;
+  text-align: center;
+}
+header .intro {
+  display: flex;
+  flex-flow: column;
+  gap: 25px;
+}
+header .intro h1 {
+  font-size: 24px;
+  font-style: italic;
+}
+header .intro h2 {
+  font-size: 36px;
+}
+header .intro p {
+  font-size: 18px;
+}
+
+#content img {
+  width: 100%;
+}
+#content h3 {
+  font-size: 32px;
+  color: #862217;
+  font-weight: 400;
+}
+#content .inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#content #about {
+  background: #1E1E24;
+  color: #fff;
+  padding: 270px 20px;
+}
+#content #about #about_inner {
+  display: flex;
+  justify-content: space-between;
+}
+#content #about #about_inner > p {
+  width: 65%;
+  font-size: 48px;
+}
+#content #about #about_inner .text_right {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  gap: 75px;
+  max-width: 30%;
+}
+#content #about p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+#content #about button {
+  border: 1px solid #fff;
+  background: none;
+  color: white;
+  text-transform: lowercase;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#content #about button:hover {
+  background: #fff;
+  color: #1E1E24;
+}
+#content #projects {
+  padding: 40px 20px;
+}
+#content #projects .project-list .project {
+  margin-bottom: 20px;
+}
+#content #projects .project-list .project h4 {
+  font-size: 24px;
+}
+#content #projects .project-list .project p {
+  font-size: 18px;
+}
+#content #gallery {
+  text-align: center;
+}
+#content #gallery button {
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+}
+#content #gallery .image-gallery {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+#content #gallery .image-gallery div {
+  width: 100px;
+  height: 100px;
+  background-color: #e0e0e0;
+}
+
+footer {
+  background: #1E1E24;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+footer .contact-info {
+  margin-top: 10px;
+}
+footer .contact-info a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}/*# sourceMappingURL=styles.css.map */
